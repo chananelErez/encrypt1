@@ -16,9 +16,9 @@ public class MenuDial {
 		}
 		
         String content=FileOperators.readFile(eORd[2], StandardCharsets.UTF_8);
-        String cypher=EncryptorAlgo.caesar(content, key);
+        String cipher=EncryptorAlgo.caesar(content, key);
         String newPath=FileOperators.NameConvert(eORd[2], eORd[0]);
         
-        FileOperators.writeFile(cypher, "Modified", newPath);
+        FileOperators.writeFile(cipher, "Modified", newPath);
 	}
 }
